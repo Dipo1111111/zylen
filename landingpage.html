@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Company | High-Tech Outreach Automation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .gradient-bg {
+      background: linear-gradient(135deg, #b00020, #ff616f);
+    }
+
+    .hero-bg {
+      background: linear-gradient(135deg, #b00020, #ff616f);
+    }
+
+    .btn-white {
+      background-color: white;
+      color: #b00020;
+    }
+
+    .btn-white:hover {
+      background-color: #b00020;
+      transition-duration: 0.3s;
+      color: white;
+    }
+
+    .card {
+      border: 1px solid #b00020; /* Charcoal Grey */
+    }
+
+    /* Gradient Button Styles */
+    .btn-gradient {
+      background: linear-gradient(135deg, #b00020, #ff616f);
+      color: white;
+    }
+
+    .btn-gradient:hover {
+      background: #b00020;
+      color: white;
+    }
+
+    .btn-gradient-glow {
+      background: linear-gradient(135deg, #b00020, #ff616f);
+      color: white;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-in;
+      box-shadow: 0 0 10px rgba(255, 97, 111, 0.7);
+    }
+
+    .btn-gradient-glow:hover {
+      box-shadow: 0 0 30px rgba(255, 97, 111, 0.7);
+    }
+
+    .navbar-bg{
+      background: linear-gradient(135deg, #b00020, #ff616f); /* Same gradient as the hero */
+      box-shadow: none !important;
+      border: none; /* Remove any potential border */
+    }
+    
+  </style>
+</head>
+
+<body class="bg-gray-100 text-white-900">
+  <!-- Navbar -->
+  <nav class="navbar-bg text-white px-6 py-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+        <!-- Logo -->
+        <img src="your-logo.png" alt="Your Logo" class="w-32 h-auto">
+      </div>
+      <div class="hidden md:flex space-x-8">
+        <a href="#features" class="hover:text-white-300 transition">Features</a>
+        <a href="#pricing" class="hover:text-white-300 transition">Pricing</a>
+        <a href="#how-it-works" class="hover:text-white-300 transition">How it Works</a>
+        <a href="#testimonials" class="hover:text-white-300 transition">Testimonials</a>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="#login" class="hover:text-white-300 transition">Login</a>
+        <a href="#signup" class="hover:text-white-300 transition">Sign Up</a>
+      </div>
+      <!-- Hamburger Menu for Small Screens -->
+      <div class="md:hidden flex items-center">
+        <button id="navbar-toggle" class="text-white">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Collapsible Navbar for Small Screens -->
+    <div id="navbar-collapse" class="md:hidden hidden">
+      <a href="#features" class="block px-4 py-2">Features</a>
+      <a href="#pricing" class="block px-4 py-2">Pricing</a>
+      <a href="#how-it-works" class="block px-4 py-2">How it Works</a>
+      <a href="#testimonials" class="block px-4 py-2">Testimonials</a>
+
+    </div>
+  </nav>
+
+
+<!-- Hero Section -->
+<header class="hero-bg text-white py-8 md:py-16">
+  <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+    <!-- Text and Buttons Section -->
+    <div class="w-full md:w-1/2 mb-8 md:mb-0">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">Reach the World with Zylen</h1>
+      <p class="text-lg md:text-2xl mb-8">Automate your email and DM outreach with our high-tech platform.</p>
+      <div class="flex gap-4">
+        <a href="#signup" class="btn-white font-semibold px-12 py-3 rounded-full">Get Started</a>
+      </div>
+    </div>
+
+    <!-- Illustration Section (moved below on smaller screens) -->
+    <div class="w-full md:w-1/2 mt-8 md:mt-0">
+      <img src="illustration.png" alt="Illustration" class="w-full h-auto">
+    </div>
+  </div>
+</header>
+
+
+
+
+
+  <!-- Features Section -->
+  <section id="features" class="py-16">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-12">Why Choose Us?</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6 bg-white shadow-lg rounded-2xl card">
+          <i class="fas fa-envelope fa-2x text-red-600 mb-4"></i>
+          <h3 class="text-xl font-bold mb-4">Smart Email Outreach</h3>
+          <p>Automate personalized email campaigns with lead scraping and dynamic content.</p>
+        </div>
+        <div class="p-6 bg-white shadow-lg rounded-2xl card">
+          <i class="fas fa-comments fa-2x text-red-600 mb-4"></i>
+          <h3 class="text-xl font-bold mb-4">Efficient DM Campaigns</h3>
+          <p>Schedule and automate DMs across Instagram, Twitter, TikTok, and Facebook.</p>
+        </div>
+        <div class="p-6 bg-white shadow-lg rounded-2xl card">
+          <i class="fas fa-chart-line fa-2x text-red-600 mb-4"></i>
+          <h3 class="text-xl font-bold mb-4">Comprehensive Analytics</h3>
+          <p>Track campaign performance and optimize outreach for higher engagement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+<section id="pricing" class="bg-gray-200 py-16">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-12">Choose the Plan That Fits Your Needs</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 bg-white shadow-lg rounded-2xl card">
+        <h3 class="text-xl font-bold mb-4">Basic Plan</h3>
+        <p>$29/month</p>
+        <ul class="my-4 text-left">
+          <li><i class="fas fa-check-circle text-red-600 mr-2"></i>10,000 emails/month</li>
+          <li><i class="fas fa-check-circle text-red-600 mr-2"></i>5 social media accounts</li>
+          <li><i class="fas fa-check-circle text-red-600 mr-2"></i>Basic analytics</li>
+        </ul>
+        <a href="#signup" class="btn-gradient text-center inline-block px-6 py-3 rounded-md">Get Started</a>
+      </div>
+      <div class="p-6 bg-white shadow-lg rounded-2xl border-4 border-red-600">
+        <h3 class="text-xl font-bold mb-4">Pro Plan</h3>
+        <p>$59/month</p>
+        <ul class="my-4 text-left">
+          <li><i class="fas fa-check-circle text-red-600 mr-2"></i>Everything in Basic</li>
+          <li><i class="fas fa-check-circle text-red-600 mr-2"></i>50,000 emails/month</li>
+          <li><i class="fas fa-check-circle text-red-600 mr-2"></i>15 social media accounts</li>
+          <li><i class="fas fa-check-circle text-red-600 mr-2"></i>Advanced analytics</li>
+        </ul>
+        <a href="#signup" class="btn-gradient-glow text-center inline-block px-6 py-3 rounded-md">Get Started</a>
+      </div>
+      <div class="p-6 bg-white shadow-lg rounded-2xl card">
+        <h3 class="text-xl font-bold mb-4">Enterprise Plan</h3>
+        <p>$99/month</p>
+        <ul class="my-4 text-left">
+          <li><i class="fas fa-check-circle text-red-600 mr-2"></i>Everything in Pro</li>
+          <li><i class="fas fa-check-circle text-red-600 mr-2"></i>Unlimited emails/month</li>
+          <li><i class="fas fa-check-circle text-red-600 mr-2"></i>Unlimited social media accounts</li>
+          <li><i class="fas fa-check-circle text-red-600 mr-2"></i>Dedicated support</li>
+        </ul>
+        <a href="#signup" class="btn-gradient text-center inline-block px-6 py-3 rounded-md">Get Started</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="py-16">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-12">How It Works</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <div class="w-16 h-16 mx-auto mb-4 bg-red-500 text-white flex items-center justify-center rounded-full">
+            1
+          </div>
+          <h3 class="text-xl font-bold mb-2">Sign Up</h3>
+          <p>Create an account and connect your email or social media platforms.</p>
+        </div>
+        <div>
+          <div class="w-16 h-16 mx-auto mb-4 bg-red-500 text-white flex items-center justify-center rounded-full">
+            2
+          </div>
+          <h3 class="text-xl font-bold mb-2">Set Campaign</h3>
+          <p>Define your outreach goals and create personalized content.</p>
+        </div>
+        <div>
+          <div class="w-16 h-16 mx-auto mb-4 bg-red-500 text-white flex items-center justify-center rounded-full">
+            3
+          </div>
+          <h3 class="text-xl font-bold mb-2">Track & Optimize</h3>
+          <p>Monitor results and adjust your campaigns for maximum engagement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Toggle the navbar for smaller screens
+    document.getElementById('navbar-toggle').addEventListener('click', function () {
+      document.getElementById('navbar-collapse').classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+
+</html>
